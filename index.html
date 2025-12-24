@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="image gallery">
+      <title> Image Gallery</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+        <h1>Image Gallery</h1>
+        </header>
+        <main>
+        <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="flowers" >Flowers</button>
+        <button data-filter="sceneries">Sceneries</button>
+        <button data-filter="flags">Flags</button>
+        </div>
+        <div class="gallery">
+       <div  class="flowers">
+        <img src="images/pink-flower2.jpg" data-category="flowers">
+        <img src="images/pink-flower.jpg" data-category="flowers">
+        <img src="images/babypink-flower.jpg" data-category="flowers">
+        <img src="images/peach-flower.jpg" data-category="flowers">
+        <img src="images/pink-flower3.jpg" data-category="flowers">
+        <img src="images/red-flower.jpg" data-category="flowers">
+       </div>
+       <div class="scenery">
+        <img src="images/scenery0.jpg" data-category="sceneries">
+        <img src="images/scenery1.jpg" data-category="sceneries">
+        <img src="images/scenery2.jpg" data-category="sceneries">
+       </div>
+       <div class="flags">
+        <div>
+        <img src="images/bahamas-flag.png" data-category="flags">
+        <label>Bahamas Flag</label>
+        </div>
+        <div>
+        <img src="images/flag-of-brunei.png" data-category="flags">
+        <label>Flag of Brunei</label>
+        </div>
+        <div>
+        <img src="images/macau-flag.png" data-category="flags">
+        <label>Macau Flag</label>
+        </div>
+       </div>
+        </div>
+        <div class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img">
+      <button class="prev">❮</button>
+     <button class="next">❯</button>
+      </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
